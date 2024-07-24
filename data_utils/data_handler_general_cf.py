@@ -15,6 +15,11 @@ class DataHandlerGeneralCF:
 			predir = './datasets/general_cf/sparse_gowalla/'
 		elif configs['data']['name'] == 'amazon':
 			predir = './datasets/general_cf/sparse_amazon/'
+
+		# Added for MovieLens Dataset.
+		elif configs['data']['name'] == 'movielens':
+			predir = './datasets/general_cf/sparse_movielens/'
+
 		self.trn_file = predir + 'train_mat.pkl'
 		self.val_file = predir + 'valid_mat.pkl'
 		self.tst_file = predir + 'test_mat.pkl'
